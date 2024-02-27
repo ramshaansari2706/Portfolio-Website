@@ -1,0 +1,400 @@
+<!-- Portfolio Website (HTML Part)-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Main part -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!--Linking of our CSS file named style.css and also it should be in the same directory/folder  in which your html file is located -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  <!-- The CSS link of the website boxicons.in to import icons-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>  <!-- The JavaScript link of the website Typed.js to import the animated typing feature -->
+</head>
+<!-- Start of the Body part of the website -->
+<body>
+<!-- Header part which contains the menus and logo -->
+<header class="header">
+    <a href="#" class="logo"><span>P</span>ortfolio</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="bx bx-menu"></i></div> <!-- The icon for menu bar-->
+    </nav>
+</header>
+<!-- Home Page of the Website-->
+    <section class="home" id="home">
+        <div class="extreme">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Ramsha Ansari</h1>  <!-- Your name here-->
+                <h3>And Iam a <span class="text"></span></h3>
+                <p><br>I am a passionate student with skills in coding, web development, and Android development. <br> I
+                    excel at solving logical problems and have strong teaching, communication, and convincing abilities.
+                </p>
+                <!-- These are the icons for social platforms -->
+                <div class="home-sci">
+                    <a href="#" style="--1:7"><i class='bx bx-git-repo-forked'></i></a>
+                    <a href="#" style="--1:8"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" style="--1:9"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" style="--1:10"><i class='bx bxl-github'></i></a>
+                </div>
+                <!-- Button to download your resume -->
+                <a href="#" id="resumeBtn" class="btn-box">Take a Look at My Resume...</a>
+            </div>
+            <!-- Your image which you want to be displayed on the home page-->
+            <div class="foto">
+                <img src="HomePicture.jpg" alt="Upload an Image">  <!--Your image here and make sure to name your image HomePicture and it should be in jpg and also it should be in the same directory/folder  in which your html file is located-->
+            </div>
+        </div>
+
+        </div>
+        <span class="home-imgHover"></span>
+
+        </div>
+    </section>
+<!-- About Section of the Website -->
+    <section>
+        <div id="about">
+            <div class="Container">
+                <div class="Row">
+                    <div class="about-col-1">
+                        <!-- Your image which you want to be displayed on the about page-->
+                        <img src="AboutPicture.jpg" alt="Upload an Image">   <!--Your image here and make sure to name your image AboutPicture and it should be in jpg and also it should be in the same directory/folder  in which your html file is located-->
+                    </div>
+                    <!-- Brief description about you -->
+                    <div class="about-col-2">
+                        <h2>About <span>Me</span></h2>
+                        <h4>Tech-Savvy College Student !!!</h4>
+                        <p>Passionate college student with a knack for technology, proficient in Programming Languages
+                            like Java,
+                            C++, and Python. Skilled in web and Android development. Effective communicator and
+                            persuasive tutor.
+                            Thrives in collaborative projects, approaching challenges with creativity and precision.
+                            Eager to master
+                            more and more skills I am dedicated to staying at the forefront of technological
+                            advancements.</p>
+                        <!-- This contains the part where there will be your skills, experience and education -->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- Skills part -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Developing Web Apps/Interfaces.</li>
+                                <li><span>Android Development</span><br>Building Android Applications.</li>
+                                <li><span>Programming</span><br>Solving Problems Through Code.</li>
+                                <li><span>Teaching</span><br>Fostering Knowledge Through Engaging Teaching.</li>
+                            </ul>
+                        </div>
+                        <!-- Experience Part -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2017-Current</span><br>Tutoring Students Of Different Classes.</li>
+                                <li><span>2021-Current</span><br>Applied Problem-Solving Skills to Complete Various Code Assignments.</li>
+                                <li><span>2021</span><br>Developed a Dynamic Personal Portfolio Website Showcasing Proficiency in HTML, CSS, and JavaScript.</li>
+                                <li><span>2023</span><br>Collaborated in a Team Project to Create a Mobile App Using Android Studio with Java as Language.</li>
+                            </ul>
+                        </div>
+                        <!-- Education Part -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Graduation [2021-2024]</span><br>Pursuing Bachelor of Computer Applications (BCA) from Dev Bhoomi School of Professional Studies, Saharanpur</li>
+                                <li><span>Higher Secondary Education [2020]</span><br>Passed 12th from "UPMSP (UP Board)" Guru Nanak Girls Inter College, Saharanpur</li>
+                                <li><span>Secondary Education [2018]</span><br>Passed 10th from "UPMSP (UP Board)" Digambar Jain Kanya Inter College, Saharanpur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Interests Section of the Website -->
+    <section>
+        <div class="interests" id="interests">
+            <div class="container">
+                <h1 class="sub-title">My <span>Interests:</span></h1>
+                <div class="interests-list">
+                    <!-- 1st Interest  -->
+                    <div>
+                        <i class='bx bxs-planet' style="color: #00eeff;"></i>
+                        <h2>Web Development</h2>
+                        <p>Web development encompasses designing, coding, and maintaining websites. It involves frontend
+                            (UI/UX) and backend (server-side logic) work, ensuring functionality, responsiveness, and
+                            optimal user experience across various browsers and devices.</p>
+                        <a href="javascript:void(0);" class="read">Read Aloud</a>
+                    </div>
+                    <!-- 2nd Interest  -->
+                    <div>
+                        <i class='bx bx-devices' style='color:#00eeff'></i>
+                        <h2>Android Development</h2>
+                        <p>Android development involves creating applications for Android devices using Java or Kotlin.
+                            It includes designing user interfaces, implementing functionality, and optimizing
+                            performance, providing seamless experiences on a diverse range of smartphones and tablets.
+                        </p>
+                        <a href="javascript:void(0);" class="read">Read Aloud</a>
+                    </div>
+                    <!-- 3rd Interest  -->
+                    <div>
+                        <i class='bx bx-code-block' style='color:#00eeff'></i>
+                        <h2>Programming Languages</h2>
+                        <p>Programming languages are tools enabling humans to communicate with computers. They dictate
+                            how instructions are written and executed, with diverse languages like Python, Java, and C++
+                            tailored for different applications and platforms.</p>
+                        <a href="javascript:void(0);" class="read">Read Aloud</a>
+                    </div>
+                    <!-- 4th Interest  -->
+                    <div>
+                        <i class='bx bx-book-reader' style='color:#00eeff'></i>
+                        <h2>Teaching</h2>
+                        <p>Teaching is imparting knowledge and skills to learners. Effective teaching involves clear
+                            communication, fostering critical thinking, and adapting to individual needs. It empowers
+                            students to grow intellectually and reach their potential.</p>
+                        <a href="javascript:void(0);" class="read">Read Aloud</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<!-- Skills Section of the Website -->
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section>
+        <div class="skills-container">
+            <div class="container1" id="Skills">
+                <!-- Technical Skills which have a bar effect -->
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <!-- 1st Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-html5' style='color:#c95d2e'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 2nd Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 3rd Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line Javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 4th Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 5th Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-python' style='color:#51e134'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 6th Technical Skill  -->
+                    <div class="bar"><i class='bx bxl-java' style='color:#f50707'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills which have a radial  effect -->
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                    <!-- 1st Professional Skill  -->
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity/Innovation</div>
+                    </div>
+                    <!-- 2nd Professional Skill  -->
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication Skills</div>
+                    </div>
+                    <!-- 3rd Professional Skill  -->
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Cognitive Skills</div>
+                    </div>
+                   <!-- 4th Professional Skill  -->
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Time Management</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Portfolio/Specialization Section of the Website -->
+    <section>
+        <div id="portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2>My <span>Specializations</span></h2>
+
+                <div class="portfolio-content">
+                    <!-- 1st Portfolio/Specialization -->
+                    <div class="row">
+                        <img src="https://woz-u.com/wp-content/uploads/2022/08/Front-End-Back-End-Development-Featured-800x637.jpg"
+                            width="300" height="350">   <!--Image URL of the Specialization which you want to be shown -->
+                        <div class="layer">
+                            <h5>Web Development</h5>
+                            <p>Web development encompasses designing, coding, and maintaining websites. It involves
+                                frontend (UI/UX) and backend (server-side logic) work, ensuring functionality,
+                                responsiveness, and optimal user experience across various browsers and devices.</p>
+
+                            <a href="javascript:void(0);"><i class='bx bx-link-external' style='color:red'></i></a>
+                        </div>
+                    </div>
+                    <!-- 2nd Portfolio/Specialization -->
+                    <div class="row">
+                        <img src="https://www.androiddeveloper.co.in/blog/wp-content/uploads/2016/03/Android-App-Development-2-768x284.jpg"
+                            width="300" height="350">  <!--Image URL of the Specialization which you want to be shown -->
+                        <div class="layer">
+                            <h5>Android App Development</h5>
+                            <p>Android development involves creating applications for Android devices using Java or
+                                Kotlin. It includes designing user interfaces, implementing functionality, and
+                                optimizing performance, providing seamless experiences on a diverse range of smartphones
+                                and tablets.</p>
+
+                            <a href="javascript:void(0);"><i class='bx bx-link-external' style='color:red'></i></a>
+                        </div>
+                    </div>
+                    <!-- 3rd Portfolio/Specialization -->
+                    <div class="row">
+                        <img src="https://t3.ftcdn.net/jpg/04/47/17/68/240_F_447176828_7Leejwia38M4u7OA3EdTGjwWapEwTHx0.jpg"
+                            width="300" height="350">  <!--Image URL of the Specialization which you want to be shown -->
+                        <div class="layer">
+                            <h5>Programming</h5>
+                            <p>Programming languages are tools enabling humans to communicate with computers. They
+                                dictate how instructions are written and executed, with diverse languages like Python,
+                                Java, and C++ tailored for different applications and platforms.</p>
+
+                            <a href="javascript:void(0);"><i class='bx bx-link-external' style='color:red'></i></a>
+                        </div>
+                    </div>
+                    <!-- 4th Portfolio/Specialization -->
+                    <div class="row">
+                        <img src="https://as2.ftcdn.net/v2/jpg/02/16/42/41/1000_F_216424176_uTatNRtlhchKTLfDZkavlbi4i1iGfFBP.jpg"
+                            width="300" height="350">  <!--Image URL of the Specialization which you want to be shown -->
+                        <div class="layer">
+                            <h5>Teaching</h5>
+                            <p>Teaching is imparting knowledge and skills to learners. Effective teaching involves clear
+                                communication, fostering critical thinking, and adapting to individual needs. It
+                                empowers students to grow intellectually and reach their potential.</p>
+
+                            <a href="javascript:void(0);"><i class='bx bx-link-external' style='color:red'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- Contact Section of the Website --> 
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <div class="arrange">
+            <!-- Contact texts and description -->
+            <div class="contact-text">
+                <h4>Let's work togeather</h4>
+                <p>Have questions, intriguing suggestions, or just a friendly 'hello'? Welcome to my solo creative
+                    space, where your thoughts hold the spotlight. Don't hesitate <br>to reach out via email . Whether
+                    you're sharing ideas on content, exploring <br> potential collaborations, or simply engaging in
+                    creative
+                    dialogue, I'm all ears. <br> As a solo creator, your input is the heartbeat of this venture !!!
+                    Connect
+                    with me on these social platforms (Yep!!! these glowing icons) for real-time updates. Let's <br>
+                    foster a
+                    community of shared passion and creativity as I'm genuinely excited <br>about the prospect of our
+                    connection. Looking forward to hearing from you</p>
+                <!-- These are the contact icons along with respective details -->
+                <div class="contact-list">
+                    <li><i class='bx bx-send' style='color:#00eeff'></i>ramsha.ansari.270600@gmail.com</li>
+                    <li><i class='bx bx-phone-call' style='color:#00eeff'></i>+91 9105335468</li>
+                </div>
+                <!-- These are the icons for social platforms -->
+                <div class="contact-icons">
+                    <a href=""><i class='bx bx-git-repo-forked'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+
+            </div>
+            <!-- Contact form to accept queries from the user -->
+            <div class="contact-form">
+                <form action="https://formspree.io/f/moqogdyq" method="POST">  <!--Your formspree link -->
+                    <input type="text" name="name" placeholder="Enter Your Name!!!" required>
+                    <input type="email" name="email" placeholder="Enter Your Valid Email Address!!!" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject!!!" required>
+                    <textarea name="message" cols="40" rows="10"
+                        placeholder="Write Something About Yourself or Enter Your Message!!!" required></textarea>
+                    <button type="submit" class="send">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+<!-- Footer of the website  -->
+    <div class="last-text">
+        <p>A Website Developed by Ramsha Ansari</p>  <!--Your name here-->
+    </div>
+
+    <!-- Arrow to redirect to the top -->
+    <a href="#" class="top"><i class='bx bxs-up-arrow'></i></a>
+    <!--Linking of our JavaScript file named script.js and also it should be in the same directory/folder  in which your html file is located-->
+    <script src="script.js"></script>
+</body>
+<!-- End of the Body tag -->
+</html>
+<!-- End of Program -->
